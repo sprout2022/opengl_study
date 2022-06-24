@@ -16,6 +16,12 @@
     <ClCompile Include="C:\opengl_study\src\context.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\opengl_study\src\buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\opengl_study\src\vertex_layout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\opengl_study\src\common.h">
@@ -28,6 +34,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\opengl_study\src\context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\opengl_study\src\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\opengl_study\src\vertex_layout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

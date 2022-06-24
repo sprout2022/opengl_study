@@ -99,11 +99,11 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\opengl_study\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -141,13 +141,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\opengl_study\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -185,13 +185,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\opengl_study\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -230,11 +230,11 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME="Hello, OpenGL!";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=640;WINDOW_HEIGHT=480;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;WINDOW_NAME=\"Hello, OpenGL!\";WINDOW_WIDTH=1920;WINDOW_HEIGHT=1080;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>C:\opengl_study\build\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -326,6 +326,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\opengl_study\src\program.h" />
     <ClCompile Include="C:\opengl_study\src\context.cpp" />
     <ClInclude Include="C:\opengl_study\src\context.h" />
+    <ClCompile Include="C:\opengl_study\src\buffer.cpp" />
+    <ClInclude Include="C:\opengl_study\src\buffer.h" />
+    <ClCompile Include="C:\opengl_study\src\vertex_layout.cpp" />
+    <ClInclude Include="C:\opengl_study\src\vertex_layout.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\opengl_study\build\ZERO_CHECK.proj">

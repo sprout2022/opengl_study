@@ -3,4 +3,7 @@
     "cmake.debugConfig": {
       "cwd": "${workspaceFolder}"
     },
+    "files.associations": {
+      "xstring": "cpp"
+    },
   }
