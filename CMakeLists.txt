@@ -8,7 +8,7 @@ set(WINDOW_NAME "Hello, OpenGL!")
 set(WINDOW_WIDTH 1280)
 set(WINDOW_HEIGHT 720)
 
-include(Dependency.cmake)
+
 
 project(${PROJECT_NAME})
 add_executable(${PROJECT_NAME} 
@@ -19,9 +19,12 @@ add_executable(${PROJECT_NAME}
   src/context.cpp src/context.h
   src/buffer.cpp src/buffer.h
   src/vertex_layout.cpp src/vertex_layout.h
+  src/image.cpp src/image.h 
+  src/texture.cpp src/texture.h
   )
 
 
+include(Dependency.cmake)
 
 # 우리 프로젝트에 include / lib 관련 옵션 추가
 target_include_directories(${PROJECT_NAME} PUBLIC ${DEP_INCLUDE_DIR})

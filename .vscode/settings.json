@@ -4,7 +4,8 @@
       "cwd": "${workspaceFolder}"
     },
     "files.associations": {
-      "xstring": "cpp"
+      "xstring": "cpp",
+      "memory": "cpp"
     },
     "cmake.configureOnOpen": true,
   }
