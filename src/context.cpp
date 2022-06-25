@@ -9,12 +9,12 @@ ContextUPtr Context::Create() {
 
 bool Context::Init() {
 
-  float vertices[] = {
-    0.5f, 0.5f, 0.0f, // top right
-    0.5f, -0.5f, 0.0f, // bottom right
-    -0.5f, -0.5f, 0.0f, // bottom left
-    -0.5f, 0.5f, 0.0f, // top left
-  };
+	float vertices[] = {
+  0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, // top right, red
+  0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, // bottom right, green
+  -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, // bottom left, blue
+  -0.5f, 0.5f, 0.0f, 1.0f, 1.0f, 0.0f, // top left, yellow
+};
   uint32_t indices[] = { // note that we start from 0!
     0, 1, 3, // first triangle
     1, 2, 3, // second triangle
@@ -23,9 +23,13 @@ bool Context::Init() {
   m_vertexLayout = VertexLayout::Create();
   m_vertexBuffer = Buffer::CreateWithData(
   GL_ARRAY_BUFFER, GL_STATIC_DRAW,
-  vertices, sizeof(float) * 12);
+  vertices, sizeof(float) * 24);
 
-  m_vertexLayout->SetAttrib(0, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 3, 0);
+m_vertexLayout->SetAttrib(0, 3, GL_FLOAT, GL_FALSE,
+  sizeof(float) * 6, 0);
+m_vertexLayout->SetAttrib(1, 3, GL_FLOAT, GL_FALSE,
+  sizeof(float) * 6, sizeof(float) * 3);
+  
   m_indexBuffer = Buffer::CreateWithData(
   GL_ELEMENT_ARRAY_BUFFER, GL_STATIC_DRAW,
   indices, sizeof(uint32_t) * 6);
@@ -41,6 +45,10 @@ bool Context::Init() {
     return false;
   SPDLOG_INFO("program id: {}", m_program->Get());
 
+  // auto loc = glGetUniformLocation(m_program->Get(), "color");
+  // m_program->Use();
+  // glUniform4f(loc, 1.0f, 1.0f, 0.0f, 1.0f);
+  
   glClearColor(0.1f, 0.2f, 0.3f, 0.0f);
   return true;
 }
