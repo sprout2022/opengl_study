@@ -6,4 +6,5 @@
     "files.associations": {
       "xstring": "cpp"
     },
+    "cmake.configureOnOpen": true,
   }
